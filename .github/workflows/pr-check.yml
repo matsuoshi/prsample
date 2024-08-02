@@ -12,4 +12,4 @@ jobs:
       - name: install packages
         run: npm ci
       - name: prettier
-        run: npm run prettier
+        run: npm run lint

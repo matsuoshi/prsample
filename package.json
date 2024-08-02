@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "prettier": "prettier --check src/*.js *.html"
+    "lint": "prettier --check **/*.{html,js,css}",
+    "fix": "prettier --write **/*.{html,js,css}"
   },
   "devDependencies": {
     "prettier": "^3.3.3"
