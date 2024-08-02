@@ -1,0 +1,13 @@
+name: check on PR
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: install packages
+        run: npm ci
+      - name: prettier
+        run: npm run prettier
