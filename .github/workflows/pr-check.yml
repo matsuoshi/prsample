@@ -1,8 +1,10 @@
 name: check on PR
-on: [pull_request, workflow_dispatch]
+on:
+  - pull_request
+  - workflow_dispatch
 
 jobs:
-  check:
+  check-on-pr:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
