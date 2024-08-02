@@ -3,5 +3,5 @@ function deleteTask(event) {
   const task = event.target.parentElement;
   taskList.removeChild(task);
 
-    console.log("deleted task: " + task.textContent);
+  console.log("deleted task: " + task.textContent);
 }
