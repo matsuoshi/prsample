@@ -11,7 +11,7 @@ document.getElementById("add-task").addEventListener("click", function () {
 
     newTask.appendChild(deleteButton);
     taskList.appendChild(newTask);
-console.log('added task: ' + taskText);
+    console.log("added task: " + taskText);
 
     document.getElementById("new-task").value = "";
   }
